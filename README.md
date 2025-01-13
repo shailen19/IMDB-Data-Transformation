@@ -4,7 +4,7 @@
 Ths python project focuses on cleaning and transforming raw data from three IMDB TSV files: **name_basics**, **title_basics**, and **title_ratings** 
 into a structed SQLite3 database. The key aim is to restructure the tables and map movie attributes for insightful analysis. 
 
-**Steps Taken:**
+**Steps:**
 1. **Load Data into SQLite3** We begin by connect to the "Movies.db" SQL database. Three large TSV files (865 MB for Name_basics, 978 MB for
 Title_basics, and 26 MB for Title_ratings) are read into python objects using ```mmap``` for efficient file handling. The data is then inserted into
 the three SQL tables: ```Title_basics```, ```Name_basics```, and ```Title_ratings```. These steps are done with files ```1_CreateDB_and_Tables``` and 
