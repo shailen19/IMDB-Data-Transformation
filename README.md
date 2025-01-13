@@ -1,7 +1,7 @@
 # IMDB-Data-Transformation
 
 **Overview**
-Ths project focuses on cleaning and transforming raw data from three IMDB TSV files: **name_basics**, **title_basics**, and **title_ratings** 
+Ths python project focuses on cleaning and transforming raw data from three IMDB TSV files: **name_basics**, **title_basics**, and **title_ratings** 
 into a structed SQLite3 database. The key aim is to restructure the tables and map movie attributes for insightful analysis. 
 
 **Steps Taken:**
@@ -29,7 +29,8 @@ tt1210166,tt0114746\n```. A recursive SQL CTE is used to flatten the data so tha
    with file ```6_Final_TableTransformation```.
 
 **How to Run:**
-To run this project, you will need to download all of the python files in this repository and run them in order from 1 through 6. 
+To run this project, you will need to download all of TSV files from https://datasets.imdbws.com/ as they are too large to store on github. The files
+needed are called: ```name.basics.tsv.gz```, ```title.basics.tsv.gz```, and ```title.ratings.tsv.gz```. Once these files have been unzipped  renamed them as: ```name_basics.tsv```, ```title_basics.tsv```, and ```title_ratings.tsv```. Make sure these tsv files are stored in the same directory as the python files in this repository and then run each python file in order from 1 through 6. 
 
 **1. Set Up Your Environment** Ensure you have VS Code installed.
 
